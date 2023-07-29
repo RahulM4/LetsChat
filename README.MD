@@ -7,31 +7,10 @@ LetsChat is a full stack chat application that allows users to communicate with 
 - MERN (MongoDB, Express.js, React, Node.js)
 - Socket.IO
 
-## Table of Contents 📜
 
-## Demo 📸
+## Screenshots
 
-
-
-## Table
-
-- [Intro](#intro)
-- [Sections](#sections)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Setting Up .env in Backend](#setting-up-env-in-backend)
-- [Hosting](#hosting)
-- [Packages Used](#packages-used)
-- [Upcoming Features](#upcoming-features)
-- [Contribution Guidelines](#contribution-guidelines)
-
-## Intro 📝
-
-LetsChat is a chat application built with the MERN stack. It provides a seamless and real-time chatting experience for users. With features like user authentication, one-on-one chat, group chat, and user profile management, LetsChat offers a comprehensive solution for communication needs.
-
-## Sections 🔖
-
+## Features
 - Home
   - Login Page
   - Sign Up Page
@@ -62,107 +41,24 @@ To get started with LetsChat, follow these steps:
 1. Fork and clone the repository from GitHub:
 
    ```bash
-   git clone https://github.com/MehraDevesh2022/chat-mind.git
+   git clone https://github.com/RahulM4/LetsChat.git
    ```
 
 ## Install the required packages for the backend by running the following command in the root directory:
 
     npm install
-    or
-    yarn add
+ 
 
 ## Install the required packages for the frontend by navigating to the frontend directory and running the following command:
 
     cd ./frontend
     npm install
-    or
-    yarn add
+ 
 
-## Run the backend server by running the following command in the root directory:
+## Run the following command in the root directory:
 
       npm start
-      or
-      yarn start
 
-## Run the frontend server by navigating to the frontend directory and running the following command:
-
-        cd ./frontend
-        npm start
-        or
-        yarn start
-
-
-
-
-## Folder Structure 📂
-
-- backend
-  - app.js
-  - appUtils
-    - error.js
-    - jwtToken.js
-  - controller
-    - chatController.js
-    - messageController.js
-    - userController.js
-  - db
-    - connectDB.js
-  - middleware
-    - asyncWrapper.js
-    - auth.js
-    - errorHandler.js
-  - model
-    - ChatModel.js
-    - MessageModel.js
-    - UserModel.js
-  - route
-    - chatRoute.js
-    - messageRoutes.js
-    - userRoute.js
-  - utils
-    - .env
-- frontend
-  - build
-    - asset-manifest.json
-    - favicon.ico
-    - index.html
-    - logo192.png
-    - logo512.png
-    - manifest.json
-    - robots.txt
-  - public
-    - favicon.ico
-    - index.html
-    - logo192.png
-    - logo512.png
-    - manifest.json
-    - robots.txt
-  - src
-    - App.css
-    - App.js
-    - index.css
-    - index.js
-    - reportWebVitals.js
-  - animations
-    - typing.json
-  - components
-    - Chatbox.js
-    - ChatLoading.js
-    - EmojiOptions.js
-    - MyChats.js
-    - ScrollableChat.js
-    - SingleChat.js
-    - styles.css
-  - config
-    - ChatLogics.js
-  - Context
-    - ChatProvider.js
-  - img
-    - img.jpg
-  - Pages
-    - Chatpage.js
-    - Homepage.css
-    - Homepage.js
 
 ## Setting Up .env in Backend 🔧
 
@@ -183,43 +79,7 @@ CLOUDINARY_URL=xxxx
 
 ```
 
-- Make sure to replace `xxxx` with your actual values.
 
-## Hosting 🌐
-
-LetsChat can be hosted using the Render platform. Follow these steps to deploy LetsChat: [https://chat-mind-3pcx.onrender.com/](https://chat-mind-3pcx.onrender.com/)
-
-1. Build the frontend by running the following command in the frontend directory: `npm run build`
-2. Add the following deployment code to the `app.js` file in the backend directory:
-
-```javascript
-// -----deployment code-----
-
-const path = require("path");
-const __dirname1 = path.resolve();
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "/frontend/build")));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
-  );
-} else {
-  app.get("/", (req, res) => {
-    res.send("API is running..");
-  });
-}
-
-// -----deployment code ends-----
-```
-
-3 Push the code to a Git repository (GitHub, GitLab, or Bitbucket).
-4 Sign up for Render and select "Web Services" from the dashboard.
-5 Choose the repository from GitHub, GitLab, or Bitbucket.
-6 Add a project name and select the runtime as Node.
-7 Set the build command to npm install or yarn install.
-8 Set the start command to node backend/app.js or npm start or yarn start.
-9 Go to the "Advanced" tab and add all the environment keys and their corresponding values from the .env file.
-10 Create the web service.
-11 Once the web service is created, go to the "Overview" tab and click on the link to view the application.
 
 ## Packages Used 📦
 
@@ -268,34 +128,8 @@ if (process.env.NODE_ENV === "production") {
 
 ## Upcoming Features 🚀
 
-- AI Chat using Open Ai api
 - Dark mode
 - Audio and video calls
-- Rest password
+- Reset password
 - Media sharing
-- And More ....
 
-## Raise an issue for 📝
-
-- - Found a bug
-- - Add new service
-- - For adding Upcoming Features
-- - For Improving Documentation
-- - And More ....
-
-## Contribution Guidelines 🤝
-
-contributions are welcome! To contribute to LetsChat, follow these steps:
-
-- Fork the repository.
-- Create a new branch.
-- Make your changes.
-- Commit your changes.
-- Push to the branch.
-- Open a pull request.
-
-## Contributors 🤝
-
-@MehraDevesh2022
-
-> Happy chatting with LetsChat! If you have any questions or need further assistance, feel free to reach out.
