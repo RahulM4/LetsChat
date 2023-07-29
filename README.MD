@@ -22,17 +22,6 @@ LetsChat is a full stack chat application that allows users to communicate with 
   - User Profile
   - Group Menu
 
-## Installation ⬇️
-
-To run LetsChat locally, you will need to have Git and Node.js installed on your machine.
-
-### Git
-
-Download and install Git from the official website: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-
-### Node.js
-
-Download and install Node.js from the official website: [https://nodejs.org](https://nodejs.org)
 
 ## Getting Started 🎯
 
