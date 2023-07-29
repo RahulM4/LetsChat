@@ -1,0 +1,58 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.css-4g3h2a{
+  background-image: linear-gradient(147.14deg, #014567 6.95%, #6600CC 93.05%) !important;
+  position: absolute !important ;
+    top: 100px !important;
+    right: 10rem !important;
+    /* margin-left: 1rem; */
+    /* border-bottom-left-radius: 20px !important; */
+}
+
+.css-4g3h2a:hover{
+  background: #6600CC !important;
+}
+
+
+.css-1l19v1o{
+         position: absolute !important ;
+    top: 0px !important;
+    right: 0px !important;
+    background: #1197b9 !important;
+    border-bottom-left-radius: 20px !important;
+}
+.css-17sthuj{
+        position: absolute !important ;
+    top: 0px !important;
+    right: 0px !important;
+    background: #1299bb !important;
+    border-bottom-left-radius: 20px !important;
+    color: #F2F2F5 !important;
+}
+.css-17sthuj:hover{
+  transform: scale(1.1) !important;
+  background: #0c9aa4 !important;
+}
+
+.css-hh2khs{
+  background: none !important;
+  color: linear-gradient(147.14deg, #014567 6.95%, #6600CC 93.05%) !important;
+  border: none !important;
+}
+
+
+
+.css-1hbeen3{
+    color : #F2F2F5 !important;
+    background-image: linear-gradient(147.14deg, #014567 6.95%, #6600CC 93.05%) !important;
+
+}
+.css-1hbeen3:hover{
+  background: #6600CC !important;
+  transform: scale(1.1) !important;
+}
