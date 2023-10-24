@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const connectDB = require("../backend/db/connectDB");
 const dotenv = require("dotenv");
+dotenv.config();
 const cloudinary = require("cloudinary");
 const errorMiddleware = require("./middleWare/errorHandler");
 const fileUpload = require("express-fileupload");
@@ -14,7 +15,6 @@ var cors = require("cors");
 const userRoute = require("./route/userRoute");
 const chatRuote = require("./route/chatRoute");
 const messageRoute = require("./route/messageRoutes");
-dotenv.config();
 app.use(cookieParser());
 app.use(express.json());
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -23,11 +23,6 @@ app.use(fileUpload());
 app.use(errorMiddleware);
 
 
-//this is for logging the incoming request
-// app.use((req, res, next) => {
-//   console.log(`Incoming request: ${req.method} ${req.originalUrl}`);
-//   next();
-// });
 
 app.use("/api/user", userRoute);
 app.use("/api/chat", chatRuote);
@@ -58,7 +53,7 @@ if (process.env.NODE_ENV === "production") {
 // connect to DB
 connectDB();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () =>
   console.log(`Server started on port ${PORT}`)

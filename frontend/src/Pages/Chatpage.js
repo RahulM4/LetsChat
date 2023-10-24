@@ -8,7 +8,7 @@ import MetaData from "../components/layouts/MetaData/Metadata";
 const Chatpage = () => {
   const [fetchAgain, setFetchAgain] = useState(false); 
   const { user  } = ChatState();
-;
+
 
 
   return (
