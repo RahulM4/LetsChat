@@ -9,8 +9,6 @@ const Chatpage = () => {
   const [fetchAgain, setFetchAgain] = useState(false); 
   const { user  } = ChatState();
 
-
-
   return (
     <>
       <MetaData title="Chat" />
