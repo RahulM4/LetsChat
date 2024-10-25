@@ -55,7 +55,7 @@ To set up the environment variables for the backend, create a `.env` file inside
 
 ```bash
 
-PORT=5000
+PORT=xxxx
 DB_LINK=xxxx
 JWT_SECRET=xxxx
 JWT_EXPIRE=2d
